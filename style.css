@@ -1,0 +1,56 @@
+#mainSection {
+    min-width: 20vw;
+    padding: 1vh;
+    border: 2px solid orange;
+    box-shadow: 5px 5px 10px rgb(255, 141, 2);
+    background-color: rgb(185, 241, 177);
+    position: absolute;
+}
+
+h1,
+#h2Mode {
+    text-align: center;
+    margin-bottom: -1px;
+}
+
+#aproxSign {
+    display: inline;
+    font-size: 55px;
+}
+
+#selectTopic {
+    margin-bottom: 10px;
+}
+
+#switchButtonSection {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#fromAndTo * {
+    display: inline;
+}
+
+
+#convertButton,
+#switchButton,
+#numInput {
+    margin-top: 10px;
+}
+
+#numInput {
+    max-width: 6.5vw;
+    min-width: 140px;
+}
+
+#fromUnit,
+#fromUnit *,
+#results,
+#results * {
+    display: inline;
+}
+
+#input {
+    max-width: 150px;
+}

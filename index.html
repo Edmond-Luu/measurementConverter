@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Measurement Converter</title>
+</head>
+
+<body>
+    <section id="mainSection" class="content">
+        <h1>Measurement Converter</h1>
+        <select id="selectTopic" class="input is-link is-1 is-large is-rounded">
+            <option value="leng">Length</option>
+            <option value="vol">Volume</option>
+            <option value="mass">Mass</option>
+            <option value="area">Area</option>
+            <option value="pres">Pressure</option>
+            <option value="temp">Temperature</option>
+        </select>
+
+        <h2 id="h2Mode">Imperial to Metric</h2>
+        <section id="switchButtonSection">
+            <button id="switchButton" class="button is-info is-large is-rounded">Switch</button>
+        </section>
+        <div id="fromAndTo">
+            <div class="select is-large is-rounded is-danger">
+                <select id="selectFrom">
+                    <option value="inches">Inches</option>
+                    <option value="feet">Feet</option>
+                    <option value="yards">Yards</option>
+                    <option value="miles">Miles</option>
+                </select>
+            </div>
+            <h2 id="rightArr"> &rarr; </h2>
+            <div class="select is-large is-rounded is-danger">
+                <select id="selectTo">
+                    <option value="millimeters">Millimeters</option>
+                    <option value="centimeters">Centimeters</option>
+                    <option value="meters">Meters</option>
+                    <option value="kilometers">Kilometers</option>
+                </select>
+            </div>
+        </div>
+
+        <input type="number" class="input is-link is-1 is-large is-rounded" id="numInput" ; />
+
+        <div id="fromUnit">
+            <h3 id="fromUnitText">in.</h3>
+        </div>
+
+        <h2 id="aproxSign">&asymp;</h2>
+
+        <div id="results">
+
+        </div>
+
+        <div>
+            <button id="convertButton" class="button is-success is-large is-rounded">Convert</button>
+        </div>
+        <script src="app.js"></script>
+        </div>
+    </section>
+</body>
+
+</html>
