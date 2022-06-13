@@ -562,7 +562,7 @@ convertButton.addEventListener('click', () => {
                     gram = userInput * 28.35;
                     fromUnit.append(leftUnit);
                     break;
-                case "liters":
+                case "pounds":
                     gram = userInput * 453.592;
                     fromUnit.append(leftUnit);
                     break;
