@@ -13,14 +13,16 @@
 <body>
     <section id="mainSection" class="content">
         <h1>Measurement Converter</h1>
-        <select id="selectTopic" class="input is-link is-1 is-large is-rounded">
-            <option value="leng">Length</option>
-            <option value="vol">Volume</option>
-            <option value="mass">Mass</option>
-            <option value="area">Area</option>
-            <option value="pres">Pressure</option>
-            <option value="temp">Temperature</option>
-        </select>
+        <div id="topicSelection">
+            <select id="selectTopic" class="input is-link is-1 is-large is-rounded">
+                <option value="leng">Length</option>
+                <option value="vol">Volume</option>
+                <option value="mass">Mass</option>
+                <option value="area">Area</option>
+                <option value="pres">Pressure</option>
+                <option value="temp">Temperature</option>
+            </select>
+        </div>
 
         <h2 id="h2Mode">Imperial to Metric</h2>
         <section id="switchButtonSection">
@@ -58,12 +60,12 @@
 
         </div>
 
-        <div>
+        <div id="conversionButton">
             <button id="convertButton" class="button is-success is-large is-rounded">Convert</button>
         </div>
         <script src="app.js"></script>
-        </div>
     </section>
 </body>
+
 
 </html>

@@ -241,7 +241,7 @@ selectFrom.addEventListener('change', () => {
             selectTo.append(celsius, kelvin);
             break;
 
-        case 'celcius':
+        case 'celsius':
         case 'kelvin':
             selectTo.append(fahrenheit);
             break;
@@ -669,7 +669,7 @@ convertButton.addEventListener('click', () => {
     const sqM = sqC / 10000;
     const hec = sqC / 100000000;
     const sqK = hec / 100;
-    const bar = mba * 1000;
+    const bar = mba / 1000;
     const kel = cel + 273.15;
 
     switch (toValue) {
