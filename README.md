@@ -2,7 +2,7 @@
 
 Click [here](https://edmond-luu.github.io/measurementConverter) or on the image below to see the app!
 
-[![image](https://user-images.githubusercontent.com/26613209/186978631-5b56f06e-4c71-4e67-9ea7-76cc97c3f9e1.png)](https://edmond-luu.github.io/measurementConverter)
+[![image](https://user-images.githubusercontent.com/26613209/186979983-42d42d08-f210-483d-a663-ee3bb1cfa74b.png)](https://edmond-luu.github.io/measurementConverter)
 
 
 This project is an expanded version of my Temperature Converter project and is my largest Javascript project. The Measurement Converter also includes conversions between the imperial and the (superior) metric system for length, volume, area, and pressure.
