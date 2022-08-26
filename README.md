@@ -1,4 +1,4 @@
-# measurementConverter
+# Javascript - Measurement Converter
 
 Click [here](https://edmond-luu.github.io/measurementConverter) or on the image below to see the app!
 
