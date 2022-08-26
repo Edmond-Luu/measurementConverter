@@ -1,8 +1,10 @@
-html {
+html,
+:root {
     background-color: rgb(39, 0, 45);
 }
 
-body{
+
+body {
     box-sizing: border-box;
     padding-top: 30px;
     height: 100vh;
@@ -75,7 +77,7 @@ h1,
     max-width: 150px;
 }
 
-.footer{
+.footer {
     margin-top: auto;
     display: flex;
     justify-content: center;
@@ -84,13 +86,19 @@ h1,
     height: 100px;
 }
 
-.caption{
+.caption {
     color: white;
     font-size: 25px;
 }
 
-.caption > a{
+.caption>a {
     color: white;
     font-weight: 700;
     text-decoration: underline;
+}
+
+@media(max-width: 520px) {
+    #numInput {
+        margin-left: 25px;
+    }
 }

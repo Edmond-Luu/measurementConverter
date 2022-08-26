@@ -169,6 +169,7 @@ selectTopic.addEventListener('change', () => {
     }
 })
 
+
 selectFrom.addEventListener('change', () => {
     selectTo.innerText = "";
     fromUnit.innerText = "";
@@ -378,83 +379,112 @@ switchButton.addEventListener('click', () => {
     selectTo.innerHTML = placeholderFromOpt;
     selectFrom.value = placeholderToSel;
     selectTo.value = placeholderFromSel;
-    
 
-    // switch (fromUnitText.innerText) {
-    //     case 'in.':
-    //     case 'ft.':
-    //     case 'yd.':
-    //     case 'mi.':
-    //         fromUnitText.innerText = 'mm';
-    //         break;
+    switch (selectFrom.value) {
+        case 'millimeters':
+            fromUnitText.innerText = 'mm';
+            break;
+        case 'centimeters':
+            fromUnitText.innerText = 'cm';
+            break;
+        case 'meters':
+            fromUnitText.innerText = 'm';
+            break;
+        case 'kilometers':
+            fromUnitText.innerText = 'km';
+            break;
+        case 'inches':
+            fromUnitText.innerText = 'in.';
+            break;
+        case 'feet':
+            fromUnitText.innerText = 'ft.';
+            break;
+        case 'yards':
+            fromUnitText.innerText = 'yd.';
+            break;
+        case 'miles':
+            fromUnitText.innerText = 'mi.';
+            break;
+        case 'milliliters':
+            fromUnitText.innerText = 'mL';
+            break;
+        case 'liters':
+            fromUnitText.innerText = 'mL';
+            break;
+        case 'fOunces':
+            fromUnitText.innerText = 'fl oz.';
+            break;
+        case 'cups':
+            fromUnitText.innerText = 'c.';
+            break;
+        case 'pints':
+            fromUnitText.innerText = 'pt.';
+            break;
+        case 'quarts':
+            fromUnitText.innerText = 'qt.';
+            break;
+        case 'gallons':
+            fromUnitText.innerText = 'gal.';
+            break;
+        case 'grams':
+            fromUnitText.innerText = 'g';
+            break;
+        case 'kilograms':
+            fromUnitText.innerText = 'kg';
+            break;
+        case 'tons':
+            fromUnitText.innerText = 'mt';
+            break;
+        case 'ounces':
+            fromUnitText.innerText = 'oz.';
+            break;
+        case 'pounds':
+            fromUnitText.innerText = 'lb.';
+            break;
+        case 'sqCentimeters':
+            fromUnitText.innerText = 'sq cm';
+            break;
+        case 'sqMeters':
+            fromUnitText.innerText = 'sq m';
+            break;
+        case 'hectares':
+            fromUnitText.innerText = 'ha';
+            break;
+        case 'sqKilometers':
+            fromUnitText.innerText = 'sq km';
+            break;
+        case 'sqInches':
+            fromUnitText.innerText = 'sq in.';
+            break;
+        case 'sqFeet':
+            fromUnitText.innerText = 'sq ft.';
+            break;
+        case 'acres':
+            fromUnitText.innerText = 'ac.';
+            break;
+        case 'sqMiles':
+            fromUnitText.innerText = 'sq mi.';
+            break;
+        case 'poundsPerSqInch':
+            fromUnitText.innerText = 'psi.';
+            break;
+        case 'millibars':
+            fromUnitText.innerText = 'mbar';
+            break;
+        case 'bars':
+            fromUnitText.innerText = 'bar';
+            break;
+        case 'fahrenheit':
+            fromUnitText.innerText = '°F';
+            break;
+        case 'celsius':
+            fromUnitText.innerText = '°C';
+            break;
+        case 'kelvin':
+            fromUnitText.innerText = 'K';
+            break;
+    }
 
-    //     case 'mm':
-    //     case 'cm':
-    //     case 'm':
-    //     case 'km':
-    //         fromUnitText.innerText = 'in.';
-    //         break;
-
-    //     case 'fl oz.':
-    //     case 'c.':
-    //     case 'pt.':
-    //     case 'qt.':
-    //     case 'gal.':
-    //         fromUnitText.innerText = "mL";
-    //         break;
-
-    //     case 'mL':
-    //     case 'L':
-    //         fromUnitText.innerText = "fl oz.";
-    //         break;
-
-    //     case 'oz.':
-    //     case 'lb.':
-    //         fromUnitText.innerText = "g"
-    //         break;
-
-    //     case 'g':
-    //     case 'kg':
-    //         fromUnitText.innerText = "oz."
-    //         break;
-
-    //     case 'sq in.':
-    //     case 'sq ft.':
-    //     case 'ac':
-    //     case 'sq mi.':
-    //         fromUnitText.innerText = 'sq cm';
-    //         break;
-
-    //     case 'sq cm':
-    //     case 'sq m':
-    //     case 'ha':
-    //     case 'sq km':
-    //         fromUnitText.innerText = 'sq in.';
-    //         break;
-
-    //     case 'psi.':
-    //         fromUnitText.innerText = 'mbar';
-    //         break;
-
-    //     case 'mbar':
-    //     case 'bar':
-    //         fromUnitText.innerText = 'psi.';
-    //         break;
-
-    //     case '°F':
-    //         fromUnitText.innerText = '°C';
-    //         break;
-
-    //     case '°C':
-    //     case 'K':
-    //         fromUnitText.innerText = '°F';
-    //         break;
-    // }
-    // numInput.value = "";
-    // const fromContents = selectFrom.getInnerHTML();
-    // const toContents = selectTo.getInnerHTML();
-    // selectFrom.innerHTML = toContents;
-    // selectTo.innerHTML = fromContents;
 })
 
 
