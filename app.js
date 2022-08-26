@@ -362,89 +362,99 @@ switchButton.addEventListener('click', () => {
     const fromUnitText = document.querySelector('#fromUnitText');
     results.innerText = "";
     switch (h2Mode.innerText) {
-        case "Imperial to Metric":
-            h2Mode.innerText = "Metric to Imperial"
+        case "Imperial 🇺🇸 → Metric 🌏":
+            h2Mode.innerText = "Metric 🌏 → Imperial 🇺🇸"
             break;
-        case "Metric to Imperial":
-            h2Mode.innerText = "Imperial to Metric"
-            break;
-    }
-
-    switch (fromUnitText.innerText) {
-        case 'in.':
-        case 'ft.':
-        case 'yd.':
-        case 'mi.':
-            fromUnitText.innerText = 'mm';
-            break;
-
-        case 'mm':
-        case 'cm':
-        case 'm':
-        case 'km':
-            fromUnitText.innerText = 'in.';
-            break;
-
-        case 'fl oz.':
-        case 'c.':
-        case 'pt.':
-        case 'qt.':
-        case 'gal.':
-            fromUnitText.innerText = "mL";
-            break;
-
-        case 'mL':
-        case 'L':
-            fromUnitText.innerText = "fl oz.";
-            break;
-
-        case 'oz.':
-        case 'lb.':
-            fromUnitText.innerText = "g"
-            break;
-
-        case 'g':
-        case 'kg':
-            fromUnitText.innerText = "oz."
-            break;
-
-        case 'sq in.':
-        case 'sq ft.':
-        case 'ac':
-        case 'sq mi.':
-            fromUnitText.innerText = 'sq cm';
-            break;
-
-        case 'sq cm':
-        case 'sq m':
-        case 'ha':
-        case 'sq km':
-            fromUnitText.innerText = 'sq in.';
-            break;
-
-        case 'psi.':
-            fromUnitText.innerText = 'mbar';
-            break;
-
-        case 'mbar':
-        case 'bar':
-            fromUnitText.innerText = 'psi.';
-            break;
-
-        case '°F':
-            fromUnitText.innerText = '°C';
-            break;
-
-        case '°C':
-        case 'K':
-            fromUnitText.innerText = '°F';
+        case "Metric 🌏 → Imperial 🇺🇸":
+            h2Mode.innerText = "Imperial 🇺🇸 → Metric 🌏"
             break;
     }
-    numInput.value = "";
-    const fromContents = selectFrom.getInnerHTML();
-    const toContents = selectTo.getInnerHTML();
-    selectFrom.innerHTML = toContents;
-    selectTo.innerHTML = fromContents;
+
+    const placeholderFromOpt = selectFrom.innerHTML;
+    const placeholderToOpt = selectTo.innerHTML;
+    const placeholderFromSel = selectFrom.value;
+    const placeholderToSel = selectTo.value;
+    selectFrom.innerHTML = placeholderToOpt;
+    selectTo.innerHTML = placeholderFromOpt;
+    selectFrom.value = placeholderToSel;
+    selectTo.value = placeholderFromSel;
+    
+
+    // switch (fromUnitText.innerText) {
+    //     case 'in.':
+    //     case 'ft.':
+    //     case 'yd.':
+    //     case 'mi.':
+    //         fromUnitText.innerText = 'mm';
+    //         break;
+
+    //     case 'mm':
+    //     case 'cm':
+    //     case 'm':
+    //     case 'km':
+    //         fromUnitText.innerText = 'in.';
+    //         break;
+
+    //     case 'fl oz.':
+    //     case 'c.':
+    //     case 'pt.':
+    //     case 'qt.':
+    //     case 'gal.':
+    //         fromUnitText.innerText = "mL";
+    //         break;
+
+    //     case 'mL':
+    //     case 'L':
+    //         fromUnitText.innerText = "fl oz.";
+    //         break;
+
+    //     case 'oz.':
+    //     case 'lb.':
+    //         fromUnitText.innerText = "g"
+    //         break;
+
+    //     case 'g':
+    //     case 'kg':
+    //         fromUnitText.innerText = "oz."
+    //         break;
+
+    //     case 'sq in.':
+    //     case 'sq ft.':
+    //     case 'ac':
+    //     case 'sq mi.':
+    //         fromUnitText.innerText = 'sq cm';
+    //         break;
+
+    //     case 'sq cm':
+    //     case 'sq m':
+    //     case 'ha':
+    //     case 'sq km':
+    //         fromUnitText.innerText = 'sq in.';
+    //         break;
+
+    //     case 'psi.':
+    //         fromUnitText.innerText = 'mbar';
+    //         break;
+
+    //     case 'mbar':
+    //     case 'bar':
+    //         fromUnitText.innerText = 'psi.';
+    //         break;
+
+    //     case '°F':
+    //         fromUnitText.innerText = '°C';
+    //         break;
+
+    //     case '°C':
+    //     case 'K':
+    //         fromUnitText.innerText = '°F';
+    //         break;
+    // }
+    // numInput.value = "";
+    // const fromContents = selectFrom.getInnerHTML();
+    // const toContents = selectTo.getInnerHTML();
+    // selectFrom.innerHTML = toContents;
+    // selectTo.innerHTML = fromContents;
 })
 
 
