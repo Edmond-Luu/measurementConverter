@@ -21,6 +21,7 @@ body {
     border: 2px solid rgb(2, 15, 255);
     box-shadow: 5px 5px 10px rgb(2, 15, 255);
     background-color: rgb(185, 241, 177);
+    border-radius: 5px;
 }
 
 h1,
