@@ -95,7 +95,7 @@ h1,
 .caption>a {
     color: white;
     font-weight: 700;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 @media(max-width: 520px) {
