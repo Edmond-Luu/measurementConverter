@@ -741,7 +741,7 @@ convertButton.addEventListener('click', () => {
             data.innerText = `${mLit} mL`;
             break;
         case 'liters':
-            data.innerText = `${lite} mL`;
+            data.innerText = `${lite} L`;
             break;
         case 'fOunces':
             data.innerText = `${fOu} fl oz.`;
