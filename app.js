@@ -409,7 +409,7 @@ switchButton.addEventListener('click', () => {
             fromUnitText.innerText = 'mL';
             break;
         case 'liters':
-            fromUnitText.innerText = 'mL';
+            fromUnitText.innerText = 'L';
             break;
         case 'fOunces':
             fromUnitText.innerText = 'fl oz.';
